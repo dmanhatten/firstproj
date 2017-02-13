@@ -5,6 +5,26 @@
 
 int fScan(void) {
 
+	int dpi = 0, farbtiefe = 0;
+	float breite = 0, hoehe = 0;
+	double groesse = 0;
+
+	system("CLS");
+	printf("---------------Scan Berechnung---------------\n");
+	printf("Bitte geben Sie die DPI ein: ");
+	scanf("%i", &dpi);
+	printf("Bitte geben Sie die Farbtiefe in Bit ein: ");
+	scanf("%i", &farbtiefe);
+	printf("Bitte geben Sie die Breite in cm ein: ");
+	scanf("%f", &breite);
+	printf("Bitte geben Sie die H\x99he in cm ein: ");
+	scanf("%f", &hoehe);
+	printf("---------------Ausgabe---------------\n");
+
+	groesse = (((dpi * breite) / 2.54 * (dpi * hoehe) / 2.54) * farbtiefe)  / 8 / 1024 / 1024;
+	printf("Die zu erwartende Dateigr\x99\xe1\e entspricht %.4lf MiB\n", groesse);
+
+
 	return 0;
 }
 
