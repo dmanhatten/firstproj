@@ -44,3 +44,25 @@ int fKinder(void) {
 
 	return 0;
 }
+
+int fSchalt(void) {
+
+	int jahr = 0;
+
+	system("CLS");
+	printf("---------------Schaltjahr pruefen---------------\n");
+	printf("Bitte geben Sie das Jahr ein: ");
+	scanf("%i", &jahr);
+	printf("Das Jahr %i ist ", jahr);
+
+	(jahr % 4 == 0) || (jahr % 100 == 0) || (jahr % 400 == 0) ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
+
+	return 0;
+}
+
+int fFlaeche(void) {
+
+	printf("Flaeche\n");
+
+	return 0;
+}
