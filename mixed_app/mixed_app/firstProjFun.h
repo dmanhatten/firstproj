@@ -66,3 +66,17 @@ int fFlaeche(void) {
 
 	return 0;
 }
+
+int fFahrenheit(void) {
+	int temperatur = 0;
+	system("CLS");
+	printf("---------------Fahrenheit <-> Celsius---------------\n");
+	printf("Bitte geben Sie die Temperatur in \xF8\x46 ein: ");
+	scanf("%i", &temperatur);
+	printf("Temperatur in \xF8\x43: %i\n", temperatur - 32);
+	printf("Bitte geben Sie die Temperatur in \xF8\x43 ein: ");
+	scanf("%i", &temperatur);
+	printf("Temperatur in \xF8\x46: %i\n", temperatur + 32);
+
+	return 0;
+}

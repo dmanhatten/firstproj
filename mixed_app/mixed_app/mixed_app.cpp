@@ -10,12 +10,12 @@ int main() {
 
 	printf("K = Kindergeburtstag\n");
 	printf("S = Scan berechnen\n");
-	printf("F = Flaeche berechnen\n");
+	printf("F = Fahrenheit <-> Celsius\n");
 	printf("J = Schaltjahr pruefen\n");
 
 	scanf("%c", &a);
 
-	a == 115 || a == 83 ? fScan() : (a == 107 || a == 75 ? fKinder(): (a == 102 || a == 70 ? fFlaeche() : fSchalt()));
+	a == 115 || a == 83 ? fScan() : (a == 107 || a == 75 ? fKinder(): (a == 102 || a == 70 ? fFahrenheit() : fSchalt()));
 
 	return 0;
 }
