@@ -21,7 +21,7 @@ int fScan(void) {
 	scanf("%f", &hoehe);
 	printf("---------------Ausgabe---------------\n");
 
-	groesse = (((dpi * breite) / 2.54 * (dpi * hoehe) / 2.54) * farbtiefe)  / 8 / 1024 / 1024;
+	groesse = ((((dpi * breite) / 2.54) * ((dpi * hoehe) / 2.54)) * farbtiefe) / 8.0 / 1024.0 / 1024.0;
 	printf("Die zu erwartende Dateigr\x99\xe1\e entspricht %.4lf MiB\n", groesse);
 
 

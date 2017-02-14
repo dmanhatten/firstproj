@@ -2,7 +2,7 @@
 
 int main() {
 
-	int a = 0;
+	char a = 0;
 	system("COLOR");
 
 	printf("\033[46m+++++++++++++++++++Auswahl++++++++++++++++++++\033[0m\n");
@@ -10,6 +10,8 @@ int main() {
 
 	printf("K = Kindergeburtstag\n");
 	printf("S = Scan berechnen\n");
+	printf("F = Flaeche berechnen\n");
+	printf("J = Schaltjahr pruefen\n");
 
 	scanf("%c", &a);
 
