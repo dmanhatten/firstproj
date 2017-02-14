@@ -55,7 +55,7 @@ int fSchalt(void) {
 	scanf("%i", &jahr);
 	printf("Das Jahr %i ist ", jahr);
 
-	(jahr % 4 == 0) || (jahr % 100 != 0) || (jahr % 400 == 0) ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
+	(jahr % 4 == 0) && (jahr % 100 != 0 || jahr % 400 == 0) ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
 
 	return 0;
 }
