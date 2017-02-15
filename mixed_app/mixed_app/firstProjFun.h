@@ -24,7 +24,7 @@ int fScan(void) {
 	groesse = ((((dpi * breite) / 2.54) * ((dpi * hoehe) / 2.54)) * farbtiefe) / 8.0 / 1024.0 / 1024.0;
 	printf("Die zu erwartende Dateigr\x99\xe1\e entspricht %.4lf MiB\n", groesse);
 
-
+	system("PAUSE");
 	return 0;
 }
 
@@ -41,7 +41,7 @@ int fKinder(void) {
 	rest = eier % kinder;
 	printf("Es wurden %i Kinder eingeladen und jedes hat %i \x9a\x62\erraschungseier bekommen.\n"
 		"Es bleiben noch %i \x81\x62rig\n", kinder, erhalten, rest);
-
+	system("PAUSE");
 	return 0;
 }
 
@@ -59,7 +59,7 @@ int fSchalt(void) {
 	erg = (jahr % 4 == 0) && (jahr % 100 != 0 || jahr % 400 == 0);
 
 	erg ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
-
+	system("PAUSE");
 	return 0;
 }
 
@@ -74,6 +74,7 @@ int fFahrenheit(void) {
 	printf("Bitte geben Sie die Temperatur in \xF8\x43 ein: ");
 	scanf("%i", &temperatur);
 	printf("Temperatur in \xF8\x46: %.2f\n", temperatur * (9. / 5.) + 32);
+	system("PAUSE");
 
 	return 0;
 }
