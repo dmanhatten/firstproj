@@ -48,28 +48,32 @@ int fKinder(void) {
 int fSchalt(void) {
 
 	int jahr = 0;
-
+	int erg = 0;
 	system("CLS");
 	printf("---------------Schaltjahr pruefen---------------\n");
 	printf("Bitte geben Sie das Jahr ein: ");
 	scanf("%i", &jahr);
+
 	printf("Das Jahr %i ist ", jahr);
 
-	(jahr % 4 == 0) && (jahr % 100 != 0 || jahr % 400 == 0) ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
+	erg = (jahr % 4 == 0) && (jahr % 100 != 0 || jahr % 400 == 0);
+
+	erg ? printf("ein Schaltjahr.\n") : printf("kein Schaltjahr.\n");
 
 	return 0;
 }
 
 int fFahrenheit(void) {
 	int temperatur = 0;
+	
 	system("CLS");
 	printf("---------------Fahrenheit <-> Celsius---------------\n");
 	printf("Bitte geben Sie die Temperatur in \xF8\x46 ein: ");
 	scanf("%i", &temperatur);
-	printf("Temperatur in \xF8\x43: %i\n", temperatur - 32);
+	printf("Temperatur in \xF8\x43: %.2f\n", (temperatur - 32) * (5. / 9.));
 	printf("Bitte geben Sie die Temperatur in \xF8\x43 ein: ");
 	scanf("%i", &temperatur);
-	printf("Temperatur in \xF8\x46: %i\n", temperatur + 32);
+	printf("Temperatur in \xF8\x46: %.2f\n", temperatur * (9. / 5.) + 32);
 
 	return 0;
 }
