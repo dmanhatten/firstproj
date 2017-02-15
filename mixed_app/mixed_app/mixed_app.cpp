@@ -6,11 +6,9 @@ bool selectMenu();
 
 int main() {
 
-	bool loop = true;
-	while (loop) {
+	do {
 		printMenu();
-		loop = selectMenu();
-	}
+	} while (selectMenu());
 	
 
 	return 0;
